@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RTCQueue/Main.cs">
+    <Files>
+      <File FileName="RTCQueue/Classes/WebSocketClient.cs" Line="23" Column="24" />
+      <File FileName="RTCQueue/Classes/Header.cs" Line="62" Column="3" />
+      <File FileName="RTCQueue/Main.cs" Line="88" Column="4" />
+      <File FileName="RTCQueue/Classes/rfc6455/FrameHeader.cs" Line="116" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/mnt/home/will.tinsdeall/projects/RTCQueue/RTCQueue/Main.cs" line="203" />
+      <Breakpoint file="/mnt/home/will.tinsdeall/projects/RTCQueue/RTCQueue/Main.cs" line="194" />
+      <Breakpoint file="/mnt/home/will.tinsdeall/projects/RTCQueue/RTCQueue/WebSocketClient.cs" line="94" />
+      <Breakpoint file="/mnt/home/will.tinsdeall/projects/RTCQueue/RTCQueue/Alchemy/Handlers/WebSocket/rfc6455/Authentication.cs" line="61" />
+      <Breakpoint file="/mnt/home/will.tinsdeall/projects/RTCQueue/RTCQueue/Alchemy/Handlers/WebSocket/rfc6455/Authentication.cs" line="68" />
+      <Breakpoint file="/mnt/home/will.tinsdeall/projects/RTCQueue/RTCQueue/Classes/WebSocketClient.cs" line="134" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

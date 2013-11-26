@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6FCE09A-A0B7-4836-8EDB-9C5D8B0EBAB3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RTCQueue</RootNamespace>
+    <AssemblyName>RTCQueue</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>JSON\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.9.5.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <Private>False</Private>
+      <Package>monodevelop</Package>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="WebSocketOpcode.cs" />
+    <Compile Include="Classes\Header.cs" />
+    <Compile Include="Classes\WebSocketClient.cs" />
+    <Compile Include="Classes\rfc6455\DataFrame.cs" />
+    <Compile Include="Classes\rfc6455\FrameHeader.cs" />
+    <Compile Include="Classes\DataFrame.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="JSON\" />
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JSON\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
